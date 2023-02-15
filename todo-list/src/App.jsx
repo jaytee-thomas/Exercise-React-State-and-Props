@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
-//this is the react class that will be rendered to the DOM
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      list: ["ready", "set", "GO"],
+      text: "",
+    };
+  }
+
   render() {
-    return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
-    );
+    return <div>{/* your render code here */}</div>;
   }
 }
 
